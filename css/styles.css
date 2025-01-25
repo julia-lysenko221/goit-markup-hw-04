@@ -47,6 +47,8 @@ p {
 
 .page-header {
   border: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -87,6 +89,7 @@ p {
   align-items: center;
   gap: 40px;
 }
+
 .nav-link {
   display: block;
   padding: 24px 0;
@@ -95,7 +98,28 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-link.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.nav-link.current::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -119,6 +143,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -127,8 +153,20 @@ p {
 }
 
 /*..........service-style............*/
+
 .service {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -160,6 +198,7 @@ p {
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service-btn:hover,
 .service-btn:focus {
@@ -178,7 +217,20 @@ p {
 }
 
 .goals-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
+}
+
+.goals-icon-wrap {
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 24px;
+}
+
+.goals-icon {
+  display: block;
+  margin: 0 auto;
 }
 
 .goals-title {
@@ -197,7 +249,7 @@ p {
   color: #434455;
 }
 
-/*..........team-style............*/
+/* ..........team-style........... */
 
 .our-team {
   padding-top: 120px;
@@ -231,6 +283,8 @@ img {
 .team-card {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .employee {
@@ -255,11 +309,33 @@ img {
   color: #434455;
 }
 
+.soc-list {
+  display: flex;
+  gap: 24px;
+  flex-shrink: 0;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.soc-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soc-icon {
+  fill: white;
+}
+
 .our-team {
   background-color: #f4f4fd;
 }
 
-/*..........portfolio-style............*/
+/* ..........portfolio-style............ */
 
 .our-portfolio {
   padding-top: 120px;
