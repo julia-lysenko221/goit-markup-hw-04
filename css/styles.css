@@ -198,7 +198,7 @@ p {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service-btn:hover,
 .service-btn:focus {
@@ -226,6 +226,10 @@ p {
   border-radius: 4px;
   margin-bottom: 8px;
   padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
 }
 
 .goals-icon {
@@ -376,6 +380,11 @@ img {
   transform: translateY(0);
 }
 
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .portf-app {
   padding: 32px 16px;
 
@@ -408,11 +417,10 @@ img {
   color: #f4f4fd;
   background-color: #4d5ae5;
   height: 100%;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text {
@@ -429,6 +437,7 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .footer-wrap {
   display: flex;
   gap: 120px;
