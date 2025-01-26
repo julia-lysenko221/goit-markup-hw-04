@@ -325,12 +325,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icon {
   fill: white;
 }
 
+.soc-icon-wrap:hover,
+.soc-icon-wrap:focus {
+  background-color: #404bbf;
+}
 .our-team {
   background-color: #f4f4fd;
 }
@@ -366,6 +372,10 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item:hover .portfolio-cover-text {
+  transform: translateY(0);
+}
+
 .portf-app {
   padding: 32px 16px;
 
@@ -382,6 +392,29 @@ img {
   margin-bottom: 8px;
 }
 
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
@@ -396,6 +429,10 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer-wrap {
+  display: flex;
+  gap: 120px;
+}
 
 .footer-logo {
   max-width: 115px;
@@ -409,4 +446,50 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-soc-wrap {
+  max-width: 208px;
+}
+
+.fotter-soc-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  padding-bottom: 16px;
+  max-width: 96px;
+}
+
+.footer-soc-icon {
+  fill: white;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
 }
