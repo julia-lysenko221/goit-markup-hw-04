@@ -459,6 +459,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin-bottom: 16px;
 }
 
 .footer-soc-wrap {
@@ -474,10 +475,6 @@ img {
   color: #fff;
   padding-bottom: 16px;
   max-width: 96px;
-}
-
-.footer-soc-icon {
-  fill: white;
 }
 
 .footer-soc-list {
@@ -498,10 +495,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-soc-icon {
+  fill: #f4f4fd;
+}
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
