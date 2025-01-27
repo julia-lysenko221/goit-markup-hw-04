@@ -225,7 +225,7 @@ p {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-  padding: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -476,7 +476,6 @@ img {
   color: #fff;
   padding-bottom: 16px;
   max-width: 96px;
-  margin-bottom: 16px;
 }
 
 .footer-soc-list {
