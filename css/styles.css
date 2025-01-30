@@ -138,7 +138,7 @@ p {
 
 .contacts-link {
   display: block;
-
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -311,6 +311,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 .team-list-icons {
@@ -319,8 +320,6 @@ img {
 
   gap: 24px;
   flex-shrink: 0;
-
-  padding-top: 8px;
 }
 
 .team-link-icons {
@@ -460,7 +459,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-bottom: 16px;
 }
 
 .footer-soc-wrap {
